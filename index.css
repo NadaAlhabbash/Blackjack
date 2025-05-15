@@ -1,0 +1,89 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/table.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 1px solid goldenrod;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cards-el, #sum-el, #player-el {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+}
+
+button {
+    color: #016f32;
+    width: 200px;
+    background: linear-gradient(to bottom, #ffd700, #daa520);
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #ffd700, #b8860b);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#player-el {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#message-el, #cards-el, #sum-el {
+    animation: fadeIn 0.5s ease-out;
+}
